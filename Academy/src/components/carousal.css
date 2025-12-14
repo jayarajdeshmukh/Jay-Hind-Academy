@@ -1,0 +1,33 @@
+@media((max-width:768px)){
+   img{
+    height: 200px;
+   }
+   .carousaltxt{
+       position: relative;
+       padding: 10px;
+    }
+    .carousaltxt h1{
+      font-size: 1.5rem;
+      color: #2D9CDB;
+      background: none;
+      font-weight: 400;
+    }
+    .carousaltxt p{
+        display: none;
+     
+    }
+}
+@media (min-width: 791px) {
+  .carousaltxt {
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.carousaltxt p{
+    display: block;
+    
+}
+.carousaltxt h1{
+     width: 400px;
+        background: rgba(0, 0, 0, 0.6);
+}
+}

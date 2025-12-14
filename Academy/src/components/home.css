@@ -92,7 +92,7 @@ ul{
 /* Center icons + label */
 .nav-menu-bottom a {
   text-decoration: none;
-  color: #111827;
+  color: #25272baf;
 }
 
 .nav-menu-bottom > div {
@@ -112,7 +112,9 @@ ul{
 .menu-icon {
   display: flex;
   justify-content: center;
+  color: #25272baf;
 }
+
 .nav-menu-bottom a:hover {
   color: #2563eb;
 }

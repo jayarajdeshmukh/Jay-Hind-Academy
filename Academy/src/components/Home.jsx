@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Home.css'
 import React, { useState } from "react";
+import Carousel from './carousal';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,8 @@ export default function Home() {
         <li><Link to="/About">About Us</Link></li>
         <li><Link to="/Contact">Contact</Link></li>
       </ul>
+      
+      <Carousel />
       
        <div className="nav-menu-bottom"> 
            <div className="home-tab">
