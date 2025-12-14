@@ -23,10 +23,11 @@ const Carousel = () => {
       <img
         src={images[currentIndex]}
         className="w-full h-130 "
-        alt="carousel"
-      />  
-        <div className="carousaltxt absolute inset-0  flex flex-col justify-center items-center text-center text-white -translate-y-2">
-        <h1 className="text-2xl md:text-3xl font-bold">
+        alt="carousel"/> 
+
+      <div className="carousal absolute inset-0  flex flex-col justify-center items-center text-center text-white -translate-y-2">
+       <div className="carousaltxt">
+        <h1>
           Welcome to JAY HIND CAREER ACADEMY
         </h1>
         <p className="text-sm md:text-base max-w-xl">
@@ -34,13 +35,21 @@ const Carousel = () => {
           Agniveer, Army, Navy, Air Force & SSC with complete physical
           and written preparation.
         </p>
-
-        {/* <button
-          onClick={() => window.open("https://wa.me/919011412026", "_blank")}
-          className="mt-4 bg-green-500 hover:bg-green-600 px-5 py-2 rounded-lg font-semibold"
-        >
-          🟢 Chat with Us
-        </button> */}
+       </div>
+        <div className="banner-content">
+          <div className="banner-btn">
+             <button>Up-Coming Batches</button>
+             <button>Enquiry</button>
+          </div>
+          <div className="card">
+             <div className="card-text center">
+                <h3>MAHARASHTRA POLICE</h3>
+                <p>Duration : 365 Days</p>
+                <p>Launch Date : 1 August 2025</p>
+                <button>More Info</button>
+             </div>
+          </div>
+        </div>
       </div>
     </div>
   );
