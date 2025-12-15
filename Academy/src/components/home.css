@@ -348,3 +348,76 @@ ul{
     align-items: center;
   }
 }
+
+/* Latest Updates and industry news */
+/* Bg Image */
+.bg-img2 {
+  min-height: 600px;              /* increase height */
+  background-image: url("/temp2.jpg"); /* your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 80px;
+}
+
+.latestupdate {
+  width: 48%;
+  color: white;
+}
+
+.latestupdate h1 {
+  margin-bottom: 20px;
+  color: #2d9cdb;
+  font-size: 35px;
+  font-weight:450;
+  text-transform: uppercase;
+}
+
+.updatecard {
+  background: white;
+  color: #111;
+  padding: 20px;
+  height: 400px;
+  width: 100%;
+}
+.updatecardImg{
+ display: flex;
+  justify-content: center;
+}
+.updatecard img{
+   height: 250px;
+  width: 400px;
+  border: 3px solid #807f7f;
+}
+ p{
+   margin-top:20px;
+  font-weight:400;
+  text-align: start;
+}
+.industrynews {
+  width: 48%;
+  color: white;
+}
+
+.industrynews h1 {
+  margin-bottom: 20px;
+  color: #2d9cdb;
+  font-size: 35px;
+  font-weight: 450;
+  text-transform: uppercase;
+}
+
+.Industrycard {
+  background: white;
+  color: #111;
+  padding: 15px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 500;
+  height: 133px;
+}

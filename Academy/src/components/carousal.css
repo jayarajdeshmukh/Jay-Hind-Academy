@@ -148,7 +148,7 @@
 @media (min-width: 990px){
   .carousal {
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
 }
   .carousaltxt{
     width: 50%;
@@ -158,11 +158,11 @@
      padding-left: 40px;
      font-size: 1.8rem;
     width: 70%;
-     font-weight: 350;
+     font-weight: 550;
 }
 .carousal h1{
      font-size:2.5rem;
-     font-weight: 300;
+     font-weight: 600;
     padding-right: 10px;
     width: 80%;
 }

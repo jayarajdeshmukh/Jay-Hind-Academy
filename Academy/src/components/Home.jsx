@@ -260,20 +260,28 @@ export default function Home() {
         </div>
 
         {/* Latest Updates and Industry News */}
-        <div className="bg-img">
-             <div className="latestupdate">
-              <h1>Latest Updates</h1>
-              <div className="updatecard">Update</div>
-             </div>
-             <div className="industrynews">
-              <h1>Industry News</h1>
-              <div>
-                 <div className="Industrycard">Insta</div>
-                 <div className="Industrycard">YouTube</div>
-                 <div className="Industrycard">Facebook</div>
-              </div>
-             </div>
-        </div>
+        <div className="bg-img2">
+  <div className="latestupdate">
+    <h1>Latest Updates</h1>
+    <div className="updatecard">
+      <div className="updatecardImg">
+         <img src="temp1.jpg" alt="" />
+      </div>
+         <p>Police Bharati Classes In Solapur(Machnur)</p>
+         <p>🕗 01 Aug 2025</p>
+    </div>
+  </div>
+
+  <div className="industrynews">
+    <h1>Industry News</h1>
+    <div>
+      <div className="Industrycard">Insta</div>
+      <div className="Industrycard">YouTube</div>
+      <div className="Industrycard">Facebook</div>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 }
