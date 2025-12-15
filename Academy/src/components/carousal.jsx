@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import './carousal.css';
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
+    const navigate = useNavigate();
+  const [showForm, setShowForm] = useState(false);
+
   const images = [
     "/temp1.jpg",
     "/temp2.jpg",
@@ -17,6 +21,15 @@ const Carousel = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  // inqiery form scroll lock
+useEffect(() => {
+  if (showForm) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [showForm]);
 
   return (
     <div className="relative w-full overflow-hidden ">
@@ -38,19 +51,51 @@ const Carousel = () => {
        </div>
         <div className="banner-content">
           <div className="banner-btn">
-             <button>Up-Coming Batches</button>
-             <button>Enquiry</button>
+             <button onClick={()=>navigate("/upcomingbatch")}>Up-Coming Batches</button>
+             <button onClick={()=> setShowForm(true)}>Enquiry</button>
           </div>
           <div className="card">
              <div className="card-text center">
                 <h3>MAHARASHTRA POLICE</h3>
                 <p>Duration : 365 Days</p>
                 <p>Launch Date : 1 August 2025</p>
-                <button>More Info</button>
+                <button  onClick={()=>navigate("/upcomingbatch")}>More Info</button>
              </div>
           </div>
         </div>
       </div>
+       {/* ================= Enquiry Form Modal ================= */}
+      {showForm && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>Enquiry Form</h2>
+
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Phone Number" />
+
+            <select>
+              <option value="">Interested In</option>
+              <option>Maharashtra Police</option>
+              <option>Agniveer</option>
+              <option>Army</option>
+              <option>Navy</option>
+              <option>Air Force</option>
+              <option>SSC</option>
+            </select>
+
+            <div className="modal-actions">
+              <button className="submit-btn">Submit</button>
+              <button
+                className="close-btn"
+                onClick={() => setShowForm(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Latest from './pages/Latest'
 import Scolarship from './pages/Scolarship'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import UpcomingBatch from './components/upcomingbatch'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/Scolarship" element={<Scolarship />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+          <Route path="/upcomingbatch" element={<UpcomingBatch />} />
       </Routes>
     </>
   )
