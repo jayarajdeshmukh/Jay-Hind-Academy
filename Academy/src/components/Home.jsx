@@ -275,12 +275,42 @@ export default function Home() {
   <div className="industrynews">
     <h1>Industry News</h1>
     <div>
-      <div className="Industrycard">Insta</div>
-      <div className="Industrycard">YouTube</div>
-      <div className="Industrycard">Facebook</div>
+      <div className="Industrycard">
+        <img src="insta.png" alt="" />
+        <div className="instatxt">
+        <h1>Instagram Official Page of JAY HIND CAREER ACADEMY Best Indian Army Physical Academy In Maharashtra</h1>
+        <div className="instalink">
+          <a href="https://www.instagram.com/">OPEN LINK 🡪</a>
+        </div>
+        </div>
+      </div>
+      <div className="Industrycard">
+        <img src="ut.png" alt="" />
+        <div className="instatxt">
+        <h1>YouTube Official Page of JAY HIND CAREER ACADEMY Best Indian Army Physical Academy In Maharashtra</h1>
+        <div className="instalink">
+          <a href="https://www.youtube.com/@shingaresirscareeracademyb2443">OPEN LINK 🡪</a>
+        </div>
+        </div>
+      </div>
+      <div className="Industrycard">
+        <img src="fb.png" alt="" />
+        <div className="instatxt">
+        <h1>Facebook Official Page of JAY HIND CAREER ACADEMY Best Indian Army Physical Academy In Maharashtra</h1>
+        <div className="instalink">
+          <a href="https://www.facebook.com/">OPEN LINK 🡪</a>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+  
+
+
+
+
 
     </div>
   );
