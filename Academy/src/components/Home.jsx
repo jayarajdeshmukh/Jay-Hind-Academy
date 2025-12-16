@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import React, { useState } from "react";
 import Carousel from "./carousal";
+import { FaUsers } from "react-icons/fa";
+import { MdOutlineEngineering } from "react-icons/md";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { HiOutlineSearch } from "react-icons/hi";
+import { MdOutlineHelpOutline } from "react-icons/md";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -306,8 +311,57 @@ export default function Home() {
   </div>
 </div>
 
-  
+  {/* About section */}
+  <div className="aboutmain">
+    <h1 className="about1">"DREAM COMES TRUE HERE ..!"</h1>
+  <div className="about-section">
+    <div className="about-img">
+      <img src="temp01.jpeg" alt="" />
+    </div>
+    
+    <div className="about-txt">
+       <h3>JAY HIND CAREER ACADEMY Best ARMY Physical Academy In India, Best Maharashtra Police, Agniveer, Army, Navy, Airforce, BSF, CISF Entrance Academy with Residential Campus</h3>
+      <div className="stats">
+  <div className="stat">
+    <MdOutlineEngineering />
+    <h2>10+ Years</h2>
+    <p>Industry Leadership</p>
+  </div>
 
+  <div className="stat">
+    <FaUsers />
+    <h2>150+</h2>
+    <p>Happy Students</p>
+  </div>
+
+  <div className="stat">
+    <HiOutlineUserGroup />
+    <h2>Expert Faculty</h2>
+    <p>Experience</p>
+  </div>
+</div>
+       <div className="about-para">
+       <p>Welcome to JAY HIND CAREER ACADEMY, the pioneer in leading candidates towards the most prestigious service of the Indian Armed Forces – Indian Army. Here, you can target the uniformed services of the Indian Nation and proudly become a part of it. ...</p>
+    </div>
+    </div>
+  </div>
+  </div>
+  
+   {/* Brouse Course Need Help */}
+   <div className="help-section">
+  <div className="help-box left">
+       <HiOutlineSearch className="help-icon" />
+       <h1>Find Your Courses</h1>
+       <p>We have an array of courses to choose from.</p>
+        <Link to="/Courses"> <button>Browse Courses</button></Link>
+     </div>
+    <div className="help-box right">
+       <MdOutlineHelpOutline className="help-icon" />
+      <h1>Need Help?</h1>
+      <p>Write your query & we'll be happy to help.</p>
+      <Link to="/Contact"><button>Get in Touch</button></Link>
+     </div>
+   </div>
 
 
 

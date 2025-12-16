@@ -445,3 +445,181 @@ ul{
     font-size: 13px;
   }
 }
+/* ABOUT */
+.aboutmain{
+  background: #2095da;
+}
+.about1{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.about-section{
+  display: flex;
+  width: 100%;  
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+}
+.about-img img{
+  height: 350px;
+  object-fit: cover;
+  width: 500px;
+  border: 1px solid black;
+}
+.about-txt{
+  margin-left: 50px;
+  width: 500px;
+}
+.about-txt h3{
+  color: white;
+  font-size: 1.8rem;
+  line-height: 35px;
+  font-weight: 600;
+}
+.stats {
+  display: flex;
+  gap: 20px;
+  padding:20px;
+}
+
+.stat {
+  color: white;
+}
+
+.stat h2{
+  background: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 650;
+}
+ /* react icons */
+.stat svg {
+  font-size: 50px;
+  margin: 5px;
+  color: white;
+}
+
+.about-para{
+  color: white;
+  font-size: 15px;
+}@media (max-width: 990px) {
+
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .about-txt {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0 0;
+  }
+
+  /* 🔒 FIX ICON DISTRACTION */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat svg {
+    font-size: 42px;
+    margin-bottom: 8px;
+  }
+
+  .stat h2 {
+    font-size: 22px;
+  }
+
+  .stat p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+/* Browse and Need Help */
+.help-section {
+  display: flex;
+  width: 100%;
+}
+
+.help-box {
+  width: 50%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;
+}
+
+.help-box.left {
+  background: white;
+  color: #111827;
+}
+.help-box.left h1{
+  font-size: 2rem;
+}
+
+.help-box.right {
+  background: #4aa9dc; 
+  color: white;
+}
+.help-box.right h1{
+  font-size: 2rem;
+}
+.help-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #2d9cdb;
+}
+
+.help-box.right .help-icon {
+  color: white;
+}
+
+.help-box button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #2d9cdb;
+  border: 1px solid white;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.help-box button:hover{
+    transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+@media (max-width: 768px) {
+  .help-section {
+    flex-direction: column;
+  }
+
+  .help-box {
+    width: 100%;
+  }
+}
