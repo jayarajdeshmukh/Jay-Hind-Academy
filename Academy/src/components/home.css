@@ -5,7 +5,6 @@
 }
 body {
   overflow-x: hidden;
-  padding-bottom: 60px;
 }
 
 .nav{
@@ -81,7 +80,6 @@ ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
    position: fixed;
   bottom: 0;
   left: 0;
@@ -109,7 +107,7 @@ ul{
 }
 
 .tab-label {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 2px;
 }
 .menu-icon {
@@ -122,6 +120,7 @@ ul{
   color: #2563eb;
 }
 @media (min-width: 768px) {
+  .bottom-nav,
   .nav-menu-bottom {
     display: none;
   }

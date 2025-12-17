@@ -67,13 +67,14 @@ export default function Home() {
 
       <Carousel />
 
+{/* nav menu bottom */}
       <div className="nav-menu-bottom">
         <div className="home-tab">
           <Link to={"/"}>
             <div className="tab-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height={35}
+                height={25}
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -88,7 +89,7 @@ export default function Home() {
             <div className="tab-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height={35}
+                height={25}
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -103,7 +104,7 @@ export default function Home() {
             <div className="tab-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                height={35}
+                height={25}
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -117,7 +118,7 @@ export default function Home() {
           <div className="menu-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              height={35}
+              height={25}
               viewBox="0 0 24 24"
               fill="currentColor"
             >
