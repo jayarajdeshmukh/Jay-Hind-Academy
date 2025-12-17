@@ -8,6 +8,19 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineHelpOutline } from "react-icons/md";
 
+// footer icons
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaGlobe } from "react-icons/fa";
+   // social media icons
+import {
+  FaWhatsapp,
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
+
+
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -363,9 +376,77 @@ export default function Home() {
      </div>
    </div>
 
+  {/* Footer */}
+  <div className="footer">
+    <div className="footer-container">
 
+      <div className="row1">
+         <div className="quicklinks">
+            <h1>Quick links</h1>     
+            <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/Toppers">Toppers</Link></li>
+            <li><Link to="/Gallery">Gallery</Link></li>
+            <li><Link to="/Latest">Latest</Link></li>
+            <li><Link to="/Scolarship">Scolarship</Link></li>
+            <li><Link to="/About">About Us</Link></li>
+            <li><Link to="/Contact">Contact</Link></li>
+         </div>
+        <div className="footer-map">
+             <h1>Location</h1>
+              <iframe
+               title="Academy Location"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1901.935249889858!2d75.56351712546858!3d17.561351218401093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc429001a89a0cd%3A0x1509bc6e58e30aef!2z4KSc4KSv4KS54KS_4KSC4KSmIOCkleCksOCkv-CkheCksCDgpIXgpJXgpYXgpKHgpK7gpYAg4KSu4KS-4KSa4KSj4KWC4KSw!5e0!3m2!1sen!2sin!4v1765951364611!5m2!1sen!2sin"
+               width="100%"
+               height="200"
+               style={{ border: 0 }}
+               allowFullScreen
+               loading="lazy"
+               referrerPolicy="no-referrer-when-downgrade"
+               ></iframe>
+         </div>
 
+      </div>
 
+      <div className="row2">
+
+        <div className="student-helpline">
+         <h1>Student helpline</h1>
+          <div className="help">
+             <FaPhoneAlt size={16} color="#2d9cdb"/>
+             <a href="tel:+91 9874561230" className="call-link">+91 987456123</a>
+          </div>
+          <div className="help">
+            <MdEmail size={20} color="#2d9cdb" />
+            <a href="mailto:jayhindacademy@gmail.com" className="email-link">jayhindacademy@gmail.com</a>
+          </div>
+          <div className="help">
+            <FaGlobe size={18} color="#2d9cdb"/>
+            <a href="https://www.jayhindacademy.com/solapur">https://www.jayhindacademy.com/</a>
+          </div>
+        </div>
+
+        <div className="social-icons">
+           <h1>Share us on</h1>
+           <div className="subscibe">
+             <a href="https://wa.me/919999999999" target="_blank"><FaWhatsapp color="#25D366" /></a>
+            <a href="https://facebook.com" target="_blank"><FaFacebookF color="#1877F2" /></a>
+            <a href="https://instagram.com" target="_blank"><FaInstagram color="#E1306C" /></a>
+            <a href="https://youtube.com" target="_blank"><FaYoutube color="#FF0000" /></a>
+           </div>
+            <h1>Subscibe to our updates</h1>
+         </div>
+      </div>
     </div>
+  </div>
+
+  {/* copyright section */}
+    <div className="copyright">
+      <div className="copyright-section">
+       <p>©2025  | Made in India with 
+       <a href=""> jD</a>  </p>
+      </div>   
+    </div>
+
+   </div>
   );
 }
