@@ -39,6 +39,9 @@ export default function Latest() {
           <Link to="/Courses">Courses</Link>
         </li>
         <li>
+          <Link to="/GirlsCorner ">Girls-Corner </Link>
+        </li>
+        <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
         <li>
@@ -47,9 +50,7 @@ export default function Latest() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+        
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -139,6 +140,11 @@ export default function Latest() {
                 </Link>
               </li>
               <li>
+                <Link to="/GirlsCorner " onClick={() => setMenuOpen(false)}>
+                  Girls-Corner
+                </Link>
+              </li>
+              <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
                 </Link>
@@ -153,11 +159,7 @@ export default function Latest() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -173,9 +175,30 @@ export default function Latest() {
         )}
       </div>
 
-
-
-
+    {/* Latest Updates */}
+      <h1 className="latest-heading">Latest Updates</h1>
+      <div className="latest-updates">
+        <div className="update-card">
+          <img src="/temp1.jpg" alt="Update 1" />
+          <h2>New Course Launch: Full Stack Development</h2>
+          <p>We are excited to announce the launch of our new Full Stack Development course starting from July 2024. Enroll now to kickstart your career in web development!</p>
+        </div>
+        <div className="update-card">
+          <img src="/temp2.jpg" alt="Update 2" />
+          <h2>Scholarship Program for 2024</h2>
+          <p>Apply for our 2024 Scholarship Program and get a chance to win up to 50% off on course fees. Deadline for applications is August 15, 2024.</p>
+        </div>
+        <div className="update-card">
+          <img src="/temp3.jpg" alt="Update 3" />
+          <h2>Guest Lecture Series</h2>
+          <p>Join us for an exclusive guest lecture series featuring industry experts from top tech companies. First session starts on July 10, 2024.</p>
+        </div>
+        <div className="update-card"> 
+          <img src="/temp2.jpg" alt="Update 4" />
+          <h2>Campus Recruitment Drive</h2>
+          <p>We are hosting a campus recruitment drive on September 5, 2024. Top companies will be visiting our campus to hire fresh talent. Prepare your resumes!</p>
+        </div>
+      </div>
 
   {/* Footer */}
   <div className="footer">
@@ -185,10 +208,10 @@ export default function Latest() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner ">Girls-Corner</Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

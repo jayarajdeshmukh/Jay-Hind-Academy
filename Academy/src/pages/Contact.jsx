@@ -40,6 +40,9 @@ export default function Contact() {
           <Link to="/Courses">Courses</Link>
         </li>
         <li>
+          <Link to="/GirlsCorner ">Girls-Corner </Link>
+        </li>
+        <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
         <li>
@@ -48,9 +51,7 @@ export default function Contact() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+        
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -139,6 +140,11 @@ export default function Contact() {
                   Courses
                 </Link>
               </li>
+               <li>
+                <Link to="/GirlsCorner " onClick={() => setMenuOpen(false)}>
+                  Girls-Corner 
+                </Link>
+              </li>
               <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
@@ -154,11 +160,7 @@ export default function Contact() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -218,10 +220,10 @@ export default function Contact() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner">Girls-Corner</Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

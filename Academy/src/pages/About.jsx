@@ -38,6 +38,9 @@ export default function About() {
         <li>
           <Link to="/Courses">Courses</Link>
         </li>
+         <li>
+          <Link to="/GirlsCorner">Girls-Corner </Link>
+        </li>
         <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
@@ -47,9 +50,7 @@ export default function About() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+       
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -138,6 +139,11 @@ export default function About() {
                   Courses
                 </Link>
               </li>
+               <li>
+                <Link to="/GirlsCorner " onClick={() => setMenuOpen(false)}>
+                  Girls-Corner 
+                </Link>
+              </li>
               <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
@@ -153,11 +159,7 @@ export default function About() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -174,25 +176,64 @@ export default function About() {
       </div>
 
 {/* About */}
- <div className='s'>
-  <div className='story1'>
+ <div className='story'>
     <h1>Our Story</h1>
-    <div>
-     <p>Welcome to GARUDZEP CAREER ACADEMY, the pioneer in leading candidates towards the most prestigious service of the Indian Armed Forces – the National Defense Academy (NDA). Here, you can target the uniformed services of the Indian Nation and proudly become a part of it. We also provide quality education for Maharashtra Police, Agniveer, Army, Navy, Airforce, BSF, CISF Entrance Academy with Residential Campus We offer Offline or Online NDA Coaching Classes to ensure you are thoroughly prepared to serve the Indian Nation with your supreme valor. We also provide quality education for Maharashtra Police, Agniveer, Army, Navy, Airforce, BSF, CISF Entrance Academy with Residential Campus At GARUDZEP CAREER ACADEMY, we are dedicated to offering NDA Coaching to 11th & 12th pass-out students and guiding them towards their goal of serving the country with hard work, dedication, and courage. Our experienced and expert faculty bring outstanding results and turn candidates into successful government servants.</p>
-     <img src="temp1.jpg" alt="" />
+  <div className='story1'>
+    <div className='story-read'>
+     <p>Welcome to JAY HIND CAREER ACADEMY, a premier institute dedicated to shaping disciplined, confident, and mission-ready candidates for India’s most prestigious uniformed services. We prepare aspirants for Maharashtra Police, Agniveer, Indian Army, Navy, Air Force, BSF, and CISF through intensive physical and written training. With a fully residential campus and offline coaching, we ensure complete focus, discipline, and all-round development. Our academy is committed to guiding 11th & 12th pass-out students towards a proud career in defence and police services, built on hard work, dedication, and courage. Led by experienced and expert faculty, JAY HIND CAREER ACADEMY has a proven record of outstanding results, transforming aspirants into successful and responsible government servants ready to serve the nation with honor and valor..</p>
     </div>
+     <div>
+       <img src="temp1.jpg" alt="" />
+     </div>
   </div>
 
   <div className='story2'>
-    <h1>Why GARUDZEP CAREER ACADEMY Best NDA Entrance Academy In India, Best Maharashtra Police, Agniveer, Army, Navy, Airforce, BSF, CISF Entrance Academy with Residential Campus</h1>
-    <p>At GARUDZEP CAREER ACADEMY, our teachers and their effective teaching methods, along with their extensive years of experience, greatly benefit students by helping them save valuable time. Even in difficult and highly competitive exams, our students achieve success in optimum time due to the guidance provided. The true nectar of proper mentorship and the energy needed to successfully clear competitive examinations is delivered by Prof. Suresh Sonawane Sir, the esteemed teacher at GARUDZEP CAREER ACADEMY.</p>
+    <h1>Why JAY HIND CAREER ACADEMY Best Indian Army Physical Training Academy In India, Best Maharashtra Police, Agniveer, Army, Navy, Airforce, BSF, CISF Entrance Academy with Residential Campus</h1>
+    <p>At JAY HIND CAREER ACADEMY, our teachers and their effective teaching methods, along with their extensive years of experience, greatly benefit students by helping them save valuable time. Even in difficult and highly competitive exams, our students achieve success in optimum time due to the guidance provided. The true nectar of proper mentorship and the energy needed to successfully clear competitive examinations is delivered by Prof. Suresh Sonawane Sir, the esteemed teacher at JAY HIND CAREER ACADEMY.</p>
   </div>
  </div>
 
  {/* faculty */}
-<div></div>
-<div></div>
-<div></div>
+<section className="faculty-section">
+  <h2>Our Expert Faculty</h2>
+  <p className="faculty-subtitle">
+    Trained by experience. Driven by discipline. Focused on results.
+  </p>
+
+  <div className="faculty-container">
+
+    <div className="faculty-card">
+      <img src="/temp1.jpg" alt="Physical Trainer" />
+      <h3>Vastad Tanaji Shingare</h3>
+      <p className="role">Chief Physical Trainer</p>
+      <p className="desc">
+        Specialized in endurance, strength training, and physical test
+        preparation for Army & Police recruitment.
+      </p>
+    </div>
+
+    <div className="faculty-card">
+      <img src="/temp3.jpg" alt="Written Coach" />
+      <h3>Shubham Shingare</h3>
+      <p className="role">Written Exam Expert</p>
+      <p className="desc">
+        Expert in Maharashtra Police, Agniveer & Defence written exams with
+        result-oriented teaching methods.
+      </p>
+    </div>
+
+    <div className="faculty-card">
+      <img src="/temp2.jpg" alt="Mentor" />
+      <h3>Tanaji Shingare</h3>
+      <p className="role">Academy Mentor, 15+ Years Experience</p>
+      <p className="desc">
+        Guides students with discipline, motivation, and strategy to
+        build confidence and leadership.
+      </p>
+    </div>
+
+  </div>
+</section>
 
 
   {/* Footer */}
@@ -203,10 +244,10 @@ export default function About() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner ">Girls-Corner </Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

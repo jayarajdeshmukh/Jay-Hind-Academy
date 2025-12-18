@@ -39,6 +39,9 @@ export default function Course() {
           <Link to="/Courses">Courses</Link>
         </li>
         <li>
+          <Link to="/GirlsCorner ">Girls-Corner</Link>
+        </li>
+        <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
         <li>
@@ -47,9 +50,7 @@ export default function Course() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+        
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -139,6 +140,11 @@ export default function Course() {
                 </Link>
               </li>
               <li>
+                <Link to="/GirlsCorner " onClick={() => setMenuOpen(false)}>
+                  Girls-Corner 
+                </Link>
+              </li>
+              <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
                 </Link>
@@ -153,11 +159,7 @@ export default function Course() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -180,10 +182,10 @@ export default function Course() {
           <div className="card">
             <img src="public/images/course.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>Police Bharti / Police Entrance Exam</h4>
+              <h4>Police Bharti Physical / Police Entrance Exam</h4>
               <p>
-                Comprehensive preparation for Maharashtra Police exams including
-                physical training, written tests, and personality development.
+                Comprehensive preparation for Maharashtra Police  
+                physical training including written tests, and personality development.
               </p>
             </div>
           </div>
@@ -191,7 +193,7 @@ export default function Course() {
           <div className="card">
             <img src="public/images/course1.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>Army Bharti / Army Entrance Exam</h4>
+              <h4>Army Bharti Physical/ Army Entrance Exam</h4>
              <p>
                     Structured training for Indian Army selection covering physical fitness,
                    written exams, medical preparation, and overall personality development.
@@ -201,7 +203,7 @@ export default function Course() {
              <div className="card">
             <img src="public/images/course2.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>Navy Bharti / Navy Entrance Exam</h4>
+              <h4>Navy Bharti Physical</h4>
               <p>
                 Complete preparation for Indian Navy recruitment including physical
                 training, written examinations, medical tests, and discipline
@@ -212,7 +214,7 @@ export default function Course() {
           <div className="card">
             <img src="public/images/course3.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>Railway Police Bharti / Railway Police Entrance Exam</h4>
+              <h4>Railway Police Bharti Physical/ Railway Police Entrance Exam</h4>
               <p>
                   Focused training for Railway recruitment exams covering written tests,
                   physical efficiency tests, medical standards, and job-oriented
@@ -223,7 +225,7 @@ export default function Course() {
           <div className="card">
             <img src="public/images/course4.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>SSC-GD / SSC-GD Entrance Exam</h4>
+              <h4>SSC-GD Physical / SSC-GD Entrance Exam</h4>
               <p>
                  Comprehensive coaching for SSC examinations including aptitude,
                   reasoning, general awareness, and systematic written exam  preparation.
@@ -235,8 +237,8 @@ export default function Course() {
             <div className="card-body">
               <h4>MPSC Physical</h4>
               <p>
-               Dedicated physical training for MPSC examinations focusing on endurance,
-  strength, agility, and exam-oriented fitness development.
+                Dedicated physical training for MPSC examinations focusing on endurance,
+                strength, agility, and exam-oriented fitness development.
               </p>
             </div>
           </div>
@@ -244,11 +246,11 @@ export default function Course() {
           <div className="card">
             <img src="public/images/course6.jpg" alt="SSC GD" />
             <div className="card-body">
-              <h4>Special Physical Training</h4>
+              <h4>Special Physical Training for Athlete</h4>
               <p>
                   Advanced physical coaching for MPSC special physical tests including
-  high-intensity workouts, performance improvement, and exam-specific
-  conditioning.
+                  high-intensity workouts, performance improvement, and exam-specific
+                  conditioning.
               </p>
             </div>
           </div>
@@ -263,10 +265,10 @@ export default function Course() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner ">Girls-Corner </Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

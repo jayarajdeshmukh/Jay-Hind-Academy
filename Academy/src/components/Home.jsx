@@ -8,6 +8,9 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 import { HiOutlineSearch } from "react-icons/hi";
 import { MdOutlineHelpOutline } from "react-icons/md";
 
+// girls corner icons
+import { FaFemale, FaShieldAlt, FaDumbbell, FaGift } from "react-icons/fa";
+
 // footer icons
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -45,6 +48,9 @@ export default function Home() {
         <li>
           <Link to="/Courses">Courses</Link>
         </li>
+          <li>
+          <Link to="/GirlsCorner ">Girls-Corner</Link>
+        </li>
         <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
@@ -54,9 +60,7 @@ export default function Home() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+      
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -147,6 +151,11 @@ export default function Home() {
                   Courses
                 </Link>
               </li>
+               <li>
+                <Link to="/GirlsCorner " onClick={() => setMenuOpen(false)}>
+                  Girls-Corner 
+                </Link>
+              </li>
               <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
@@ -162,11 +171,7 @@ export default function Home() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -194,6 +199,64 @@ export default function Home() {
         </div>
       </div>
 
+{/* girls section */}
+ <section className="girls-corner">
+      <h1 className="girls-heading">👩‍✈️ Girls Corner</h1>
+
+      <p className="girls-subheading">
+        Special training programs designed exclusively for girls with safety,
+        confidence, and success in mind.
+      </p>
+
+      <div className="girls-cards">
+        <div className="girls-card">
+          <span className="icon">
+            <FaFemale />
+          </span>
+          <h3>Female Trainers</h3>
+          <p>
+            Certified and experienced female trainers for better comfort and
+            guidance.
+          </p>
+        </div>
+
+        <div className="girls-card">
+          <span className="icon">
+            <FaDumbbell />
+          </span>
+          <h3>Girls Special Batch</h3>
+          <p>
+            Separate batches focused on physical fitness and confidence
+            building.
+          </p>
+        </div>
+
+        <div className="girls-card">
+          <span className="icon">
+            <FaShieldAlt />
+          </span>
+          <h3>Safe Environment</h3>
+          <p>
+            Secure campus with discipline, safety, and supportive atmosphere.
+          </p>
+        </div>
+
+        <div className="girls-card">
+          <span className="icon">
+            <FaGift />
+          </span>
+          <h3>Special Offers</h3>
+          <p>
+            Exclusive discounts and fee benefits for girl candidates.
+          </p>
+        </div>
+      </div>
+
+      <div className="girls-btn">
+         <Link to="/GirlsCorner ">Know-more</Link>
+      </div>
+    </section>
+
       {/* Popular Courses */}
       <div className="courselist">
         <h1>Popular Courses</h1>
@@ -201,10 +264,10 @@ export default function Home() {
           <div className="card">
             <img src="/temp1.jpg" alt="Police Bharti" />
             <div className="card-body">
-              <h4>Police Bharti / Police Entrance Exam</h4>
+              <h4>Police Bharti Physical / Police Entrance Exam</h4>
               <p>
-                Comprehensive preparation for Maharashtra Police exams including
-                physical training, written tests, and personality development.
+                Comprehensive preparation for Maharashtra Police Physical Training including
+                written tests, and personality development.
               </p>
             </div>
           </div>
@@ -212,7 +275,7 @@ export default function Home() {
           <div className="card">
             <img src="/temp2.jpg" alt="Army Bharti" />
             <div className="card-body">
-              <h4>Army Bharti / Army Entrance Exam</h4>
+              <h4>Army Bharti Physical / Army Entrance Exam</h4>
               <p>
                 Get ready for Army Bharti with guidance on written exams,
                 medical tests, and fitness training for successful recruitment.
@@ -223,7 +286,7 @@ export default function Home() {
           <div className="card">
             <img src="/temp3.jpg" alt="SSC GD" />
             <div className="card-body">
-              <h4>SSC-GD / SSC-GD Entrance Exam</h4>
+              <h4>SSC-GD Physical / SSC-GD Entrance Exam</h4>
               <p>
                 Specialized coaching for SSC-GD exams covering technical
                 knowledge, aptitude tests, and overall fitness preparation.
@@ -385,10 +448,10 @@ export default function Home() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner ">Girls-Corner </Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

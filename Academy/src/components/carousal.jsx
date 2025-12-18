@@ -44,9 +44,9 @@ useEffect(() => {
           Welcome to JAY HIND CAREER ACADEMY
         </h1>
         <p className="text-sm md:text-base max-w-xl">
-          India’s Best Residential Training Academy for Maharashtra Police,
-          Agniveer, Army, Navy, Air Force & SSC with complete physical
-          and written preparation.
+           Maharashtra’s Most Trusted Physical Training Academy, preparing elite
+           candidates for Maharashtra Police, Agniveer, Army, Navy, Air Force & SSC
+           through complete physical and written training.
         </p>
        </div>
         <div className="banner-content">
@@ -86,12 +86,7 @@ useEffect(() => {
 
             <div className="modal-actions">
               <button className="submit-btn">Submit</button>
-              <button
-                className="close-btn"
-                onClick={() => setShowForm(false)}
-              >
-                Close
-              </button>
+              <button className="close-btn" onClick={() => setShowForm(false)}>Close</button>
             </div>
           </div>
         </div>
@@ -99,5 +94,6 @@ useEffect(() => {
     </div>
   );
 };
+
 
 export default Carousel;

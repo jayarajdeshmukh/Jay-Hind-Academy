@@ -208,6 +208,92 @@ ul{
     transform: translateX(-100%);
   }
 }
+/* Girls Corner */
+.girls-corner{
+  padding: 60px 8vw;
+  background: #f9fcff;
+  text-align: center;
+}
+
+.girls-heading{
+  font-size: 2.2rem;
+  color: #2d9cdb;
+  margin-bottom: 10px;
+}
+
+.girls-subheading{
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.05rem;
+}
+
+.girls-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.girls-card{
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.girls-card:hover{
+  transform: translateY(-8px);
+}
+
+.girls-card .icon{
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.girls-card h3{
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.girls-card p{
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.girls-btn{
+  margin-top: 40px;
+}
+
+.girls-btn a{
+  background: #e91e63;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.girls-btn a:hover{
+  background: #c2185b;
+}
+.icon{
+  width: 60px;
+  height: 60px;
+  background: #ffe3ec;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px; 
+  font-size: 1.8rem;
+  color: #e91e63;
+}
+
+
 /* Courses card*/
 .courselist {
   background: #e5e7eb;

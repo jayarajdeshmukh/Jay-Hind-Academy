@@ -1,6 +1,17 @@
-import './css/Scolarship.css'
+import './css/GirlsCorner.css'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+
+// girls corner icons
+import { FaGift, FaUtensils, FaHandsHelping } from "react-icons/fa";
+import {
+  FaShieldAlt,
+  FaUserNurse,
+  FaVideo,
+  FaFemale,
+  FaFirstAid,
+} from "react-icons/fa";
+
 // footer icons
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -14,7 +25,7 @@ import {
 } from "react-icons/fa";
 
 
-export default function Scholarship() {
+export default function GirlsCorner() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -38,6 +49,9 @@ export default function Scholarship() {
         <li>
           <Link to="/Courses">Courses</Link>
         </li>
+          <li>
+          <Link to="/GirlsCorner ">Girls-Corner </Link>
+        </li>
         <li>
           <Link to="/Toppers">Toppers</Link>
         </li>
@@ -47,9 +61,7 @@ export default function Scholarship() {
         <li>
           <Link to="/Latest">Latest</Link>
         </li>
-        <li>
-          <Link to="/Scolarship">Scolarship</Link>
-        </li>
+      
         <li>
           <Link to="/About">About Us</Link>
         </li>
@@ -138,6 +150,11 @@ export default function Scholarship() {
                   Courses
                 </Link>
               </li>
+               <li>
+                <Link to="/GirlsCorner" onClick={() => setMenuOpen(false)}>
+                  Girls-Corner
+                </Link>
+              </li>
               <li>
                 <Link to="/Toppers" onClick={() => setMenuOpen(false)}>
                   Toppers
@@ -153,11 +170,7 @@ export default function Scholarship() {
                   Latest
                 </Link>
               </li>
-              <li>
-                <Link to="/Scolarship" onClick={() => setMenuOpen(false)}>
-                  Scholarship
-                </Link>
-              </li>
+             
               <li>
                 <Link to="/About" onClick={() => setMenuOpen(false)}>
                   About
@@ -173,8 +186,114 @@ export default function Scholarship() {
         )}
       </div>
 
+   {/* Girls corner */}
+ <section className="girls-hero">
+      <div className="girls-hero-content">
+        <h1>Special Training Program for Girls</h1>
+        <p>
+          Safe, disciplined and result-oriented training for Army, Police,
+          Agniveer & Defence aspirants.
+        </p>
 
+        <div className="girls-hero-buttons">
+          <a
+            href="https://wa.me/919011412526"
+            target="_blank"
+            rel="noreferrer"
+            className="whatsapp"
+          >
+            <FaWhatsapp /> WhatsApp Enquiry
+          </a>
 
+          <a href="tel:919011414526" className="call">
+            <FaPhoneAlt /> Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+     <section className="girls-offers">
+      <h2 className="offers-heading">🎉 Special Support & Offers for Girls</h2>
+      <p className="offers-subheading">
+        We believe financial limitations should never stop a girl from achieving her dream.
+      </p>
+
+      <div className="offers-cards">
+
+        <div className="offer-card">
+          <FaUtensils className="offer-icon" />
+          <h3>Only Mess Fees for Girls</h3>
+          <p>
+            Girl candidates need to pay only mess fees. Training fees are
+            completely waived.
+          </p>
+        </div>
+
+        <div className="offer-card highlight">
+          <FaHandsHelping className="offer-icon" />
+          <h3>Free Training for Widow Candidates</h3>
+          <p>
+            Girls from widowed families receive 100% free training.
+            Only mess fees are applicable.
+          </p>
+        </div>
+
+        <div className="offer-card">
+          <FaGift className="offer-icon" />
+          <h3>Additional Financial Support</h3>
+          <p>
+            Special consideration and concessions for deserving and
+            economically weaker girl candidates.
+          </p>
+        </div>
+      </div>
+    </section>
+<p className="offers-note">
+  <strong>Note:</strong> Required documents may be requested for verification.
+</p>
+   <section className="girls-safety">
+      <h2 className="safety-heading">🛡️ Safety & Facilities for Girls</h2>
+      <p className="safety-subheading">
+        We ensure a secure, disciplined, and supportive training environment
+        for every girl candidate.
+      </p>
+
+      <div className="safety-cards">
+        <div className="safety-card">
+          <FaVideo className="safety-icon" />
+          <h3>24x7 CCTV Surveillance</h3>
+          <p>Complete campus monitoring for safety and discipline.</p>
+        </div>
+
+        <div className="safety-card">
+          <FaFemale className="safety-icon" />
+          <h3>Female Staff Supervision</h3>
+          <p>Dedicated female trainers and staff for guidance & support.</p>
+        </div>
+
+        <div className="safety-card">
+          <FaFirstAid className="safety-icon" />
+          <h3>Medical & First Aid Support</h3>
+          <p>Immediate medical assistance during physical training.</p>
+        </div>
+
+        <div className="safety-card">
+          <FaShieldAlt className="safety-icon" />
+          <h3>Strict Discipline</h3>
+          <p>Code of conduct to maintain safety, respect, and focus.</p>
+        </div>
+
+        <div className="safety-card">
+          <FaUserNurse className="safety-icon" />
+          <h3>Emergency Care Support</h3>
+          <p>Emergency handling procedures for complete peace of mind.</p>
+        </div>
+      </div>
+
+      <div className="safety-note">
+        <strong>Parents’ Note:</strong> Our campus follows strict safety
+        protocols to ensure your daughter trains in a secure environment.
+      </div>
+    </section>
 
 
   {/* Footer */}
@@ -185,10 +304,10 @@ export default function Scholarship() {
          <div className="quicklinks">
             <h1>Quick links</h1>     
             <li><Link to="/Courses">Courses</Link></li>
+            <li><Link to="/GirlsCorner">Girls-Corner </Link></li>
             <li><Link to="/Toppers">Toppers</Link></li>
             <li><Link to="/Gallery">Gallery</Link></li>
             <li><Link to="/Latest">Latest</Link></li>
-            <li><Link to="/Scolarship">Scolarship</Link></li>
             <li><Link to="/About">About Us</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
          </div>

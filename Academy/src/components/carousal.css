@@ -1,50 +1,6 @@
-@media((max-width:768px)){
-   img{
-    height: 200px;
-   }
-   .carousal{
-       position: relative;
-       padding: 10px;
-    }
-    .carousal h1{
-      font-size: 1.5rem;
-      color: #2D9CDB;
-      background: none;
-      font-weight: 400;
-    }
-    .carousal p{
-        display: none;
-     
-    }
-}
-@media (min-width: 768px) and (max-width: 1078px){
-  .carousal {
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-  .carousaltxt{
-    width: 50%;
-  }
-.carousaltxt p{
-    display: block;
-     width: 600px;
-     padding-left: 40px;
-     font-size: 1.3rem;
-    width: 100%;
-     font-weight: 350;
-}
-.carousal h1{
-     width: 450px;
-     font-size:1.5rem;
-     font-weight: 450;
-    padding-right: 10px;
-}
-.carousaltxt{
-    position: absolute;
-    top: 25%;
-    left: 5%;
-}
-}
+/* =======================
+   BASE STYLES (ALL DEVICES)
+======================= */
 
 /* Banner content */
 .banner-content {
@@ -55,6 +11,7 @@
   padding: 40px 20px;
   text-align: center;
 }
+
 /* Buttons row */
 .banner-btn {
   display: flex;
@@ -66,14 +23,14 @@
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #2563eb; /* blue */
+  background-color: #2563eb;
   color: #fff;
   font-size: 17px;
   cursor: pointer;
 }
 
 .banner-btn button:last-child {
-  background-color: #16a34a; /* green */
+  background-color: #16a34a;
 }
 
 .banner-btn button:hover {
@@ -108,7 +65,7 @@
 .card-text button {
   margin-top: 15px;
   padding: 10px 18px;
-  background-color: #f97316; 
+  background-color: #f97316;
   border: none;
   border-radius: 6px;
   color: white;
@@ -121,8 +78,38 @@
   background-color: #ea580c;
 }
 
-/* Responsive */
-@media (max-width: 480px) {
+/* =======================
+   MOBILE (≤ 767px)
+======================= */
+
+@media (max-width: 767px) {
+
+  img {
+    height: 200px;
+  }
+
+  .carousal {
+    position: relative;
+    padding: 10px;
+  }
+
+  .carousal h1 {
+    font-size: 1.5rem;
+    color: #2D9CDB;
+    background: none;
+    font-weight: 400;
+  }
+
+  .carousal p {
+    display: none;
+  }
+
+  .banner-content {
+    position: static;
+    transform: none;
+    padding: 20px;
+  }
+
   .banner-btn {
     flex-direction: column;
   }
@@ -132,48 +119,116 @@
   }
 }
 
-@media (max-width: 767px) {
+/* =======================
+   TABLET (768px – 989px)
+======================= */
+
+@media (min-width: 768px) and (max-width: 989px) {
+
+  .carousal {
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .carousaltxt {
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+
+  .carousaltxt p {
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    font-size: 1.3rem;
+    font-weight: 350;
+  }
+
+  .carousal h1 {
+    width: 450px;
+    font-size: 1.5rem;
+    font-weight: 450;
+    padding-right: 10px;
+  }
+
   .banner-content {
-    position: static;
-    transform: none;
-    padding: 20px;
+    right: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 900px){
- .banner-content{
-    right: 0px;
- }
-} 
 
-@media (min-width: 990px){
+/* =======================
+   LAPTOP (990px – 1199px)
+======================= */
+@media (min-width: 990px) and (max-width: 1199px) {
+
   .carousal {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.1);
-}
-  .carousaltxt{
-    width: 50%;
+    align-items: flex-start; /* 🔥 move content to left */
   }
-.carousaltxt p{
-    display: block;
-     padding-left: 40px;
-     font-size: 1.8rem;
-    width: 70%;
-     font-weight: 550;
-}
-.carousal h1{
-     font-size:2.5rem;
-     font-weight: 600;
-    padding-right: 10px;
-    width: 80%;
-}
-.carousaltxt{
+
+  .carousaltxt {
+    width: 55%;
     position: absolute;
-    top: 15%;
+    top: 18%;
     left: 10%;
+    text-align: left;        /* 🔥 KEY CHANGE */
+  }
+
+  .carousaltxt h1 {
+    line-height: 1.2;
+    font-size: 1.8rem;
+    font-weight: 550;
+  }
+
+  .carousaltxt p {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 550;
+    line-height: 1.4;
+  }
 }
+
+
+/* =======================
+   DESKTOP (≥ 1200px)
+======================= */
+@media (min-width: 1200px) {
+
+  .carousal {
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    align-items: flex-start; /* 🔥 left anchored */
+  }
+
+  .carousaltxt {
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    text-align: left;     
+  }
+
+  .carousaltxt h1 {
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .carousaltxt p {
+    font-size: 2rem;
+    font-weight: 550;
+    line-height: 1.45;
+  }
 }
-/* enquiry form */
-/* Modal overlay */
+
+
+/* =======================
+     (ENQUIRY FORM)
+======================= */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -187,20 +242,20 @@
   z-index: 999;
 }
 
-/* Modal box */
 .modal {
   background: #fff;
   padding: 25px;
   width: 320px;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
+
 }
 
 .modal h2 {
   margin-bottom: 15px;
 }
 
-/* Inputs */
 .modal input,
 .modal select {
   width: 100%;
@@ -210,10 +265,9 @@
   border: 1px solid #ccc;
 }
 
-/* Buttons */
 .modal-actions {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   margin-top: 15px;
 }
 
@@ -223,12 +277,14 @@
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
+  flex: 1;
 }
 
 .close-btn {
-  background: #dc2626;
+  background: #dc2626  !important;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
+  flex: 1;
 }
