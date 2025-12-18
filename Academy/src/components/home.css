@@ -196,8 +196,9 @@ ul{
 .news-track {
   display: inline-block;
   white-space: nowrap;
+  font-weight: 500;
   padding-left: 100%;
-  animation: scrollText 25s linear infinite;
+  animation: scrollText 28s linear infinite;
 }
 }
 @keyframes scrollText {
