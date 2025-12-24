@@ -11,3 +11,8 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+
+window.requestAnimationFrame(() => {
+  const loader = document.getElementById("preloader");
+  if (loader) loader.remove();
+});

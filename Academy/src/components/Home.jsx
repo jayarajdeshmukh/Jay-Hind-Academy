@@ -35,7 +35,7 @@ export default function Home() {
           <h1 className="md:text-3xl font-semibold">करिअर अकॅडमी</h1>
         </div>
         <div className="nav2">
-          <button>📍 Solapur</button>
+          <button onClick={() => (window.location.href = "https://maps.app.goo.gl/g88s52VGDafQWJWH6") }>📍 Solapur</button>
           <button onClick={() => (window.location.href = "tel:9011412026")}>
             Call +91 9011415250
           </button>
